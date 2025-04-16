@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <script src="externo.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var altura 
+var peso
+function recebeDados(){
+     altura = parseFloat(prompt(`Altura: `))
+     peso = parseFloat(prompt(`Peso: `))
+}
+
+function calculo(altura, peso){
+    return (peso/Math.pow(altura,2))
+}
+
+function avaliacao(){
+    recebeDados();
+    var resultado = calculo(altura, peso)
+
+
+    if(resultado < 18.5){
+        alert(`${resultado.toFixed(2)} -> Magreza`)
+    }
+    else if(resultado < 24.9){
+        alert(`${resultado.toFixed(2)} -> Normal`)
+    }
+    else if(resultado < 29.9){
+        alert(`${resultado.toFixed(2)} -> Sobrepeso`)
+    }
+    else if(resultado < 39.9){
+        alert(`${resultado.toFixed(2)} -> Obesidade`)
+    }
+    else{
+        alert(`${resultado.toFixed(2)} -> Obesidade Grave`)
+    }
+
+}
+
+avaliacao();
+
+
+
+    </script>
+  
+</body>
+</html>
