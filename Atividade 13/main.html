@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 13 - Janela</title>
+    <script>
+        function alterarEstado(estado) {
+            var imagem = document.getElementById("janela");
+            var titulo = document.getElementById("titulo");
+
+            switch(estado) {
+                case "aberta":
+                    imagem.src = "janela_aberta.jpg";
+                    titulo.textContent = "Janela aberta";
+                    break;
+                case "fechada":
+                    imagem.src = "janela_fechada.jpg";
+                    titulo.textContent = "Janela fechada";
+                    break;
+                case "quebrada":
+                    imagem.src = "janela_quebrada.jpg";
+                    titulo.textContent = "Janela quebrada";
+                    break;
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        img {
+            width: 100%;  
+            max-width: 600px;  
+            height: auto; 
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body onload="alterarEstado('fechada')">
+    <h1 id="titulo">Atividade 13 - Janela</h1>
+    <img id="janela" 
+         src="janela_fechada.jpg" 
+         alt="Janela Fechada" 
+         onmouseover="alterarEstado('aberta')" 
+         onmouseout="alterarEstado('fechada')" 
+         onclick="alterarEstado('quebrada')" />
+</body>
+</html>
