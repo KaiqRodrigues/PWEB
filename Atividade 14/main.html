@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 14 - Transformar Texto</title>
+    <script>
+        function modificarTexto() {
+            var nome = document.forms["formulario1"]["idNome"];
+
+            if (document.forms["formulario1"]["tipoTexto"][0].checked) {
+                nome.value = nome.value.toUpperCase();
+            } else if (document.forms["formulario1"]["tipoTexto"][1].checked) {
+                nome.value = nome.value.toLowerCase();
+            }
+        }
+    </script>
+    <style>
+        body {
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            max-width: 400px;
+            margin: auto;
+        }
+        label {
+            font-size: 16px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Atividade 14 - Transformar Texto</h1>
+    <form name="formulario1">
+        <label for="idNome">Nome:</label>
+        <input type="text" id="idNome" name="idNome" size="50">
+        <br><br>
+
+        <input type="radio" name="tipoTexto" onclick="modificarTexto()"> <label>MAIÚSCULAS</label>
+        <input type="radio" name="tipoTexto" onclick="modificarTexto()"> <label>minúsculas</label>
+    </form>
+</body>
+
+</html>
