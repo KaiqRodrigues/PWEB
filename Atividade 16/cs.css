@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+select {
+  margin: 20px auto;
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+}
+
+select:hover {
+  border-color: green;
+}
