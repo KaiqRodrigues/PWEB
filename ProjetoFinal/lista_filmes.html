@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista_filmes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/lista.css">      <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-black justify-content-between">
+        <div class="home_button">
+            <a href="index.html">
+                  <img class="png_home_button" src="Imagens/home.png" alt="home image">
+             </a>
+             <span class="navbar-brand">MyMovies</span>
+         </div>
+        <form id="input-pesquisa">
+          <input id="search-bar" class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+          <img class="png_search_button" src="Imagens/search.png" alt="search image">
+        </form>
+      </nav>
+    </header>
+
+
+    <section style="display: flex; justify-content: center; padding: 5em 0;">
+        <div class="titulo-lista">Lista de Filmes</div>
+    </section>
+
+    <section class="cards"></section>
+    
+    <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+        <h3>Sobre</h3>
+        <p>
+            Projeto desenvolvido para disciplina de Programação Web.
+        </p>
+        </div>
+
+        <div class="footer-section">
+        <h3>Links Rápidos</h3>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="https://github.com/KaiqRodrigues">GitHub</a></li>
+        </ul>
+        </div>
+        <div class="footer-section">
+        <h3>Contato</h3>
+        <p>
+            Email: ficticio@dominio.com<br>
+            Telefone: (11) 99999-9999<br>
+            Endereço: Silent Hill, 205
+        </p>
+        </div>
+        
+    </div>
+    <div class="footer-copy">
+        &copy; 2025 Kaique. Todos os direitos reservados.
+    </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="Scripts/crud.js"></script>
+    <script src="Scripts/lista_filmes.js"></script>
+    <script src="Scripts/barra_pesquisa.js"></script>
+
+</body>
+</html>

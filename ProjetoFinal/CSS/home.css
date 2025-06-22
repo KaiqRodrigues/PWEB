@@ -1,0 +1,166 @@
+.carousel-inner {
+  width: 95%;
+  margin: 2em auto 0 auto;
+  position: relative;
+}
+
+.carousel-inner img {
+  object-fit: cover;
+  height: 40em;
+  width: 100%;
+}
+
+.carousel-caption {
+  background-color: rgba(43, 43, 43, 0.6);
+  left: 0;
+  right: auto;
+  width: auto;
+  padding: 1em 3em;
+  margin-left: 2em;
+  margin-bottom: 1em;
+  display: inline-block;
+  position: absolute;
+  bottom: 1em;
+}
+
+.carousel-caption h1 {
+  font-weight: bold;
+  margin: 0;
+  max-width: 100%;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 4em;
+  height: 4em;
+  border-radius: 10px;
+  background-color: rgba(43, 43, 43, 0.6);
+  background-image: url('Imagens/next.png');
+}
+
+.carousel-control-next-icon {
+  transform: rotate(90deg);
+}
+
+.carousel-control-prev-icon {
+  transform: rotate(270deg);
+}
+
+.menu-buttons {
+  width: 95%;
+  margin: 3em auto;
+  background-color: rgba(197, 197, 197, 0.4);
+}
+
+.botoes {
+  padding: 1em 0 2em 0;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.menu-buttons h1 {
+  font-weight: bold;
+  text-align: center;
+  padding-top: 1em;
+}
+
+.botoes button {
+  height: auto;
+  font-weight: bold;
+  font-size: 25px;
+  width: 10em;
+  background: #2b2929;
+}
+
+.star{
+    width: 20px;
+    vertical-align: text-bottom;
+    margin-left: 5px;
+}
+
+.leaderboard {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.leaderboard h1 {
+  color: black;
+  font-weight: bold;
+}
+
+#tabela-rank,
+#tabela-rank th,
+#tabela-rank td,
+#tabela-rank thead,
+#tabela-rank tbody,
+#tabela-rank tr {
+  background: #2b2929;
+}
+
+#tabela-rank tr {
+  height: 3em;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+.titulo-rank {
+  text-align: left;
+}
+
+#tabela-rank th {
+  padding-top: 1em;
+}
+
+@media (max-width: 768px) {
+  .carousel-inner img {
+    height: 15em;
+  }
+
+  .carousel-caption {
+    padding: 0.5em 1em;
+    font-size: 14px;
+    margin-left: 1em;
+    margin-right: 1em;
+    width: auto;
+    bottom: 0.5em;
+  }
+
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    width: 2.5em;
+    height: 2.5em;
+    background-size: contain;
+  }
+
+  .menu-buttons h1,
+  .leaderboard h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .botoes {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .botoes button {
+    width: 80%;
+    font-size: 18px;
+  }
+
+  #tabela-rank {
+    font-size: 14px;
+  }
+
+  #tabela-rank tr {
+    height: auto;
+  }
+
+  .star {
+    width: 16px;
+    margin-left: 2px;
+  }
+}
